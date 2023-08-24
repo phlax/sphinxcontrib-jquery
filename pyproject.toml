@@ -34,9 +34,6 @@ classifiers = [
     "Topic :: Documentation",
     "Topic :: Documentation :: Sphinx",
 ]
-dependencies = [
-    "Sphinx>=1.8",
-]
 dynamic = ["version"]
 
 [[project.authors]]
@@ -55,3 +52,8 @@ include = [
 
 [tool.coverage.run]
 source = ["sphinxcontrib.jquery"]
+
+[project.optional-dependencies]
+standalone = [
+  "sphinx > 1.8",
+]
